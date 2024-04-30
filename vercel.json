@@ -1,8 +1,9 @@
 {
-  "headers": [
+  "version": 2,
+  "routes": [
     {
-      "source": "/api/submitForm",
-      "headers": []
+      "src": "/api/submitForm",
+      "dest": "/api/submitForm.js"
     }
   ]
 }
