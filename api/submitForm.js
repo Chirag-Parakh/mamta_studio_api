@@ -3,8 +3,8 @@
 const nodemailer = require('nodemailer');
 
 export default async function submitForm(req, res) {
-  if(req.method === 'get'){
-    res.status(200).send('Form submitted successfully');
+  if(req.method === 'GET'){
+     res.status(200).send('Form submitted successfully');
   }
   if (req.method === 'POST') {
     const { name, contact, email, eventDate, eventVenue, others } = req.body;
