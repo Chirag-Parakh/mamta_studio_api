@@ -27,7 +27,7 @@ export default async function submitForm(req, res) {
       const mailOptions = {
         from: 'cparakh53@gmail.com',
         to: 'rajdara.highway@gmail.com',
-        subject: 'New client enquire',
+        subject: 'New Client Enquiry',
         text: `Name: ${name}\nContact: ${contact}\nEmail: ${email}\nEvent Date: ${eventDate}\nEvent Venue: ${eventVenue}\nOthers: ${others}`
       };
 
