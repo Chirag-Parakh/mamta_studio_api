@@ -7,6 +7,9 @@ export default async function submitForm(req, res) {
      res.status(200).send('Form submitted successfully');
   }
   if (req.method === 'POST') {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
     const { name, contact, email, eventDate, eventVenue, others } = req.body;
 
     const transporter = nodemailer.createTransport({
