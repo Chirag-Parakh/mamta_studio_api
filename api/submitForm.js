@@ -63,7 +63,7 @@ export default async function submitForm(req, res) {
         service: 'gmail',
         auth: {
           user: 'cparakh09@gmail.com',
-          pass: 'Parakh#@09'
+          pass: 'parakh#@09'
         }
       });
 
