@@ -2,14 +2,16 @@
 
 const nodemailer = require('nodemailer');
 
+
 export default async function submitForm(req, res) {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'POST, GET, OPTIONS');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
   if(req.method === 'GET'){
      res.status(200).json({ message: 'Form submitted' });
   }
   if (req.method === 'POST') {
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+    
     const { name, contact, email, eventDate, eventVenue, others } = req.body;
 
     const transporter = nodemailer.createTransport({
