@@ -4,7 +4,7 @@ const nodemailer = require('nodemailer');
 
 export default async function submitForm(req, res) {
   if(req.method === 'GET'){
-     res.status(200).send('Form submitted successfully');
+     res.status(200).send('Form submitted');
   }
   if (req.method === 'POST') {
     res.setHeader('Access-Control-Allow-Origin', '*');
