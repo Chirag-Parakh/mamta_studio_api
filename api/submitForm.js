@@ -4,7 +4,7 @@ const nodemailer = require('nodemailer');
 
 export default async function submitForm(req, res) {
   if(req.method === 'GET'){
-     res.status(200).send('Form submitted');
+     res.status(200).json({ message: 'Form submitted' });
   }
   if (req.method === 'POST') {
     res.setHeader('Access-Control-Allow-Origin', '*');
@@ -16,7 +16,7 @@ export default async function submitForm(req, res) {
       service: 'gmail',
       auth: {
         user: 'cparakh09@gmail.com',
-        pass: 'parakh#@09'
+        pass: 'Parakh#@09'
       }
     });
 
