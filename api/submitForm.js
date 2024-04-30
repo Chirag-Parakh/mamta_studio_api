@@ -62,13 +62,13 @@ export default async function submitForm(req, res) {
       const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-          user: 'cparakh09@gmail.com',
-          pass: 'parakh#@09'
+          user: 'cparakh53@gmail.com',
+          pass: 'zlsn zyzk djcl fiol'
         }
       });
 
       const mailOptions = {
-        from: 'cparakh09@gmail.com',
+        from: 'cparakh53@gmail.com',
         to: 'cparakh09@gmail.com',
         subject: 'New client enquire',
         text: `Name: ${name}\nContact: ${contact}\nEmail: ${email}\nEvent Date: ${eventDate}\nEvent Venue: ${eventVenue}\nOthers: ${others}`
